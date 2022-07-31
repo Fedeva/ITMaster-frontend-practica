@@ -3,10 +3,71 @@
     padding: 0;
 }
 
-div {
-   background: lightgray;
-   margin: 12px;
+body,
+button{
+    font-family: 'Montserrat', sans-serif;;
 }
 
-#first-nav
+div {
+   background: lightgray;
+}
+
+#first-nav{
+    padding: 12px;
+    text-align: right;
+}
+
+#second-nav{
+    padding: 12px;
+    background: white;
+    }
+
+#second-nav img{
+    height: 80px;
+}
+
+#banner{
+    padding:80px;
+    text-align: center;
+    background: lightblue;
+    background-image: url(https://placeimg.com/640/480/tech);
+
+}
+
+#banner button,
+#banner h1{
+    margin: 12px;
+    color: white;
+    }
+
+#banner h1{
+    font-size: 60px;
+ }
+
+ #banner button{
+     padding: 6px 6px;
+     background: white;
+     border: 1px solid black;   
+     color: black;
+ }
+
+
+#items{ 
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#items div{
+    margin: 12px;
+    width: 26%;
+    text-align: center;
+    background: white;
+
+}
+
+#items div img{
+    width: 100%;
+}
+
+
 
