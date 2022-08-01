@@ -8,13 +8,13 @@ button{
     font-family: 'Montserrat', sans-serif;;
 }
 
-div {
-   background: lightgray;
-}
+
 
 #first-nav{
     padding: 12px;
     text-align: right;
+    background: lightgray;
+
 }
 
 #second-nav{
@@ -47,7 +47,8 @@ div {
  #banner button{
      padding: 6px 6px;
      background: white;
-     border: 1px solid black;   
+     border: 1px solid white;   
+     border-radius: 3px;
      color: black;
  }
 
@@ -55,13 +56,15 @@ div {
 #items{ 
     display: flex;
     justify-content: space-evenly;
+    padding: 40px;
+
 }
 
 #items div{
-    margin: 12px;
-    width: 26%;
+    width: 24%;
     text-align: center;
     background: white;
+
 
 }
 
@@ -69,5 +72,37 @@ div {
     width: 100%;
 }
 
+#items div p{
+    margin: 12px;
+    line-height: 24px;
+
+}
+
+.negrita{
+    font-weight: bold;
+}
+
+
+.tachado{
+    text-decoration: line-through;
+}
+
+.precio{
+    font-weight: bold;
+}
+
+.off{
+    color: forestgreen;
+}
+
+.tachado,
+.precio,
+.off{
+    display: block;
+}
+
+#footer{
+    background: lightgray;
+}
 
 
