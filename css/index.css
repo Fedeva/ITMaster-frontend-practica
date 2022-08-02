@@ -31,6 +31,10 @@ button{
     text-align: center;
     background: lightblue;
     background-image: url(https://placeimg.com/640/480/tech);
+}
+
+#banner .overlay{
+    background: rgba(100, 100, 100,.4);
 
 }
 
@@ -55,10 +59,13 @@ button{
 
 #items{ 
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 40px;
 
 }
+
+
 
 #items div{
     width: 24%;
@@ -75,6 +82,20 @@ button{
 #items div p{
     margin: 12px;
     line-height: 24px;
+
+}
+
+ #items .pagina{
+    border: 1px solid;
+    background: goldenrod;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+}
+
+.pagina:hover {
+    font-weight: bold;
+    box-shadow: gray 3px 3px 3px;
 
 }
 
@@ -103,6 +124,7 @@ button{
 
 #footer{
     background: lightgray;
+    height: 200px;
 }
 
 
