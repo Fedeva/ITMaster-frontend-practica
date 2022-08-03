@@ -8,6 +8,22 @@ button{
     font-family: 'Montserrat', sans-serif;;
 }
 
+a {
+   text-decoration: none;
+   border:  1px solid white;
+   padding: 3px;
+}
+
+a:hover{
+    text-decoration: underline;
+    border:1px solid
+
+}
+
+a:visited{
+    color: grey;
+}
+
 
 
 #first-nav{
@@ -20,7 +36,10 @@ button{
 #second-nav{
     padding: 12px;
     background: white;
-    }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 #second-nav img{
     height: 80px;
@@ -127,4 +146,43 @@ button{
     height: 200px;
 }
 
+
+
+@media screen and (max-width: 768px){
+    #banner h1{
+        font-size: 42px;
+    }
+    #items{
+        padding: 24px;
+    }
+
+    #items div {
+     width: 48%;
+   }
+}
+
+
+@media screen  and (max-width: 426px){
+    #second-nav .menu{
+        display: none;
+    }
+
+    #second-nav .hamburgesa{
+        text-align: center;
+    }
+   
+    #second-nav img{
+        height: 50px;
+    }
+    #banner {
+        display: none;
+    }
+    #items{
+        padding: 12px;
+    }
+   
+    #items div{
+        width: 100%;
+         }
+     }
 
