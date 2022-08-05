@@ -41,9 +41,7 @@ a:visited{
     align-items: center;
 }
 
-#second-nav img{
-    height: 80px;
-}
+
 
 #banner{
     padding:80px;
@@ -164,15 +162,28 @@ a:visited{
 
 @media screen  and (max-width: 426px){
     #second-nav .menu{
-        display: none;
+       display: none;
+       position: absolute;
+       
     }
 
     #second-nav .hamburgesa{
         text-align: center;
     }
-   
+
+    #second-nav .hamburgesa:hover + .menu{
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+        position: relative;
+    }
+
     #second-nav img{
-        height: 50px;
+        height: 30px;
+    }
+   
+    #second-nav .logo{
+        height: 70px;
     }
     #banner {
         display: none;
@@ -185,4 +196,3 @@ a:visited{
         width: 100%;
          }
      }
-
