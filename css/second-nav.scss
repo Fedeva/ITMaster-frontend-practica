@@ -1,0 +1,36 @@
+#second-nav {
+  
+     .mini-menu {
+    position: relative;
+
+}
+
+     .menu{
+   display: none;
+   position: absolute;
+   top: 36px;
+   right: 0px;
+   background: white;
+   line-height: 25px;
+   
+}
+
+     .hamburgesa{
+    text-align: center;
+}
+
+      .hamburgesa:hover  +  .menu{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+
+} 
+
+      img{
+    height: 30px;
+}
+
+      .logo{
+    height: 60px;
+}
+}

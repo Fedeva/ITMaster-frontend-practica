@@ -1,0 +1,25 @@
+#second-nav .mini-menu {
+  position: relative;
+}
+#second-nav .menu {
+  display: none;
+  position: absolute;
+  top: 36px;
+  right: 0px;
+  background: white;
+  line-height: 25px;
+}
+#second-nav .hamburgesa {
+  text-align: center;
+}
+#second-nav .hamburgesa:hover + .menu {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+#second-nav img {
+  height: 30px;
+}
+#second-nav .logo {
+  height: 60px;
+}/*# sourceMappingURL=second-nav.css.map */
