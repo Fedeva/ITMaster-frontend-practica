@@ -12,7 +12,7 @@
 #second-nav .hamburgesa {
   text-align: center;
 }
-#second-nav .hamburgesa:hover + .menu {
+#second-nav:hover + .menu {
   display: flex;
   flex-direction: column;
   text-align: right;

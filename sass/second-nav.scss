@@ -19,7 +19,7 @@
     text-align: center;
 }
 
-      .hamburgesa:hover  +  .menu{
+      &:hover  +  .menu{
     display: flex;
     flex-direction: column;
     text-align: right;
