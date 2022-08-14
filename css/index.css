@@ -102,7 +102,7 @@ a:visited{
 
 }
 
- #items .pagina{
+  .pagina{
     border: 1px solid;
     background: goldenrod;
     padding: 12px 24px;

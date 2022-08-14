@@ -13,6 +13,7 @@ aceptar.addEventListener('click', function () {
     cartelCookie.style.display = 'none'
 })
 
+
 // footer(newsletter)
 
 var botonDeEnviar = document.querySelector('#footer form button')
@@ -27,4 +28,3 @@ botonDeEnviar.addEventListener('click', function(){
      document.querySelector('#footer').appendChild(parrafo)
 
 })
-
