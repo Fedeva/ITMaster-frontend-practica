@@ -65,7 +65,7 @@ for (var i = 0; i < links.length; i++){
 
 function generateLink(link){
     console.log(link)
-    return '<a href=" ' + links[i].href + ' ">'  + links[i].name + '</a>'
+    return '<a href=" ' + link[i].href + ' ">'  + link[i].name + '</a>'
 
 }
 
