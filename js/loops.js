@@ -32,7 +32,7 @@ for (var i = 0; i < mixto.length; i++){
 
 
 
-// modifico el menu
+// modifico el MENU
 
 var linksContainer = document.querySelector('.menu')
      console.log(linksContainer)
@@ -64,71 +64,99 @@ for (var i = 0; i < links.length; i++){
 }
 
 function generateLink(link){
-    console.log(link)
-    return '<a href=" ' + link[i].href + ' ">'  + link[i].name + '</a>'
+    return '<a href=" ' + link.href + ' ">'  + link.name + '</a>'
 
 }
 
 
  
 
-//Modifico Items
+//Modifico ITEMS
 
 var itemsContainer = document.querySelector('#items')
 console.log(itemsContainer)
 
 var items = [
     {
-        img : '"https://placeimg.com/640/480/tech"',
-        p : '<span class="negrita">Product category one ( tag span is better to use)</span>'
+        img : "https://placeimg.com/640/480/tech",
+        p : ' 1 Product category one'
     },
     {
-        img : '"https://placeimg.com/640/480/tech"',
-        p : '<span class="negrita">Product category one ( tag span is better to use)</span>'
+        img : "https://placeimg.com/640/480/tech",
+        p : '2 Product category one'
     },
     {
-        img : '"https://placeimg.com/640/480/tech"',
-        p : '<span class="negrita">Product category one ( tag span is better to use)</span>'
+        img : "https://placeimg.com/640/480/tech",
+        p : ' 3 Product category one'
     },
     {
-        img : '"https://placeimg.com/640/480/tech"',
-        p : '<span class="negrita">Product category one ( tag span is better to use)</span>'
+        img : "https://placeimg.com/640/480/tech",
+        p : '4 Product category one'
     },
     {
-        img : '"https://placeimg.com/640/480/tech"',
-        p : '<span class="negrita">Product category one ( tag span is better to use)</span>'
+        img : "https://placeimg.com/640/480/tech",
+        p : '5 Product category one'
     },
     {
-        img : '"https://placeimg.com/640/480/tech"',
-        p : '<span class="negrita">Product category one ( tag span is better to use)</span>'
+        img : "https://placeimg.com/640/480/tech",
+        p : ' 6 Product category one'
     },
     {
-        img : '"https://placeimg.com/640/480/tech"',
-        p : '<span class="negrita">Product category one ( tag span is better to use)</span>'
+        img : "https://placeimg.com/640/480/tech",
+        p : ' 7 Product category one'
     },
     {
-        img : '"https://placeimg.com/640/480/tech"',
-        p : '<span class="negrita">Product category one ( tag span is better to use)</span>'
+        img : "https://placeimg.com/640/480/tech",
+        p : ' 8 Product category one'
     },
     {
-        img : '"https://placeimg.com/640/480/tech"',
-        p : '<span class="negrita">Product category one ( tag span is better to use)</span>'
+        img : "https://placeimg.com/640/480/tech",
+        p : ' 9 Product category one'
     },
     {
-        img : '"https://placeimg.com/640/480/tech"',
-        p : '<span class="negrita">Product category one ( tag span is better to use)</span>'
+        img : "https://placeimg.com/640/480/tech",
+        p : ' 10 Product category one'
     },
     {
-        img : '"https://placeimg.com/640/480/tech"',
-        p : '<span class="negrita">Product category one ( tag span is better to use)</span>'
+        img : "https://placeimg.com/640/480/tech",
+        p : ' 11 Product category one'
     },
     {
-        img : '"https://placeimg.com/640/480/tech"',
-        p : '<span class="negrita">Product category one ( tag span is better to use)</span>'
+        img : "https://placeimg.com/640/480/tech",
+        p : 
+            {
+                span :  '27000',
+                span :  '25000',
+                span :  'OFF',
+            } ,
+        
     },
 
 ]
 
-for (var i = 0; i < items.length; i++){
-    itemsContainer.innerHTML += '<div><img src=' + items[i].img + 'alt=" logo"/> <p>' + items[i].p + '</p></div>'
+var paginacion = document.querySelector('.pagina')
+var cantidadElementos = 4
+
+function mostrarItems(q){
+    for (var i = 0; i < q; i++){
+        itemsContainer.innerHTML +=     `
+         <div>
+           <img src=" ${items[i].img} "alt=""/>
+           <p><span class="negrita">${items[i].p}</span>( tag span is better to use)</p>
+         </div>
+         `
+    }
 }
+
+paginacion.addEventListener('click', function(){
+     
+    mostrarItems(cantidadElementos)
+   
+    
+})
+
+cantidadElementos = 12
+
+mostrarItems(cantidadElementos)
+
+
